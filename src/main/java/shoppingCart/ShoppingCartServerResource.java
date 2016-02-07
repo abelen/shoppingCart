@@ -15,6 +15,9 @@ import org.restlet.resource.ServerResource;
  */
 public class ShoppingCartServerResource extends ServerResource implements ShoppingCartResource {
 
+    /**
+     * creates an instance.
+     */
     public ShoppingCartServerResource() {
 
     }
@@ -49,18 +52,4 @@ public class ShoppingCartServerResource extends ServerResource implements Shoppi
 
         component.start();
     }
-
-    /*
-    @Override
-    public String processRequest(Map json, String method) {
-        if (method.equals("get")) {
-            String returnString = "";
-            returnString = new ResponseParseFactory().getSuccessJsonString(getShoppingCart());
-            return returnString;
-        } else if (method.equals("post")) {
-            //createShoppingCart();
-        }
-        return null;
-    }
-    */
 }

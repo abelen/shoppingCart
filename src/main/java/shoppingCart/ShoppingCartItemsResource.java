@@ -21,7 +21,7 @@ public class ShoppingCartItemsResource extends ServerResource {
         items = new ArrayList<String>();
     }
 
-    @Get
+    @Get("txt")
     public String toString() {
         return "Items are placed here.";
         /*
